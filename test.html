@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Hub</title>
+    <link rel="icon" href="C:\Users\user\OneDrive\Pictures\logo1.png" type="image/icon type">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/css/glide.core.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="C:\Users\user\OneDrive\Pictures\logo1.png" alt="Fitness Hub Logo"></a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">Trainers</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <input type="search" placeholder="Search programs, trainers..."> 
+                </div>
+                <ul class="user-links">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="promo-grid">
+            <div class="promo-large">
+                <div class="promo-content">
+                    <img src="http://via.placeholder.com/1250x550" alt="Get Fit with Our Summer Programs"> 
+                    <div class="promo-text">
+                        <h3>Eid Mubarak Offer</h3>
+                        <p>Offers from 15 June to 20 June. Get 40% off!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-small">
+                <div class="promo-content">
+                    <img src="http://via.placeholder.com/600x275" alt="Join Our Cardio Classes"> 
+                    <div class="promo-text">
+                        <h3>Cardio Classes</h3>
+                        <p>Join our cardio classes for a healthy lifestyle.</p>
+                    </div>
+                </div>
+                <div class="promo-content">
+                    <img src="http://via.placeholder.com/600x275" alt="Strength Training Sessions"> 
+                    <div class="promo-text">
+                        <h3>Strength Training</h3>
+                        <p>Enhance your strength with our training sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Products</h2>
+            <div class="products-container">
+                <div class="product">
+                    <img src="http://via.placeholder.com/500x300" alt="Cardio Equipment"> 
+                    <div class="product-info">
+                        <h3>Cardio Equipment</h3>
+                        <a href="#" class="button">Shop</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="http://via.placeholder.com/500x300" alt="Strength Training"> 
+                    <div class="product-info">
+                        <h3>Strength Training</h3>
+                        <a href="#" class="button">Shop</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="http://via.placeholder.com/500x300" alt="Yoga Classes"> 
+                    <div class="product-info">
+                        <h3>Yoga Classes</h3>
+                        <a href="#" class="button">Shop</a>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="http://via.placeholder.com/500x300" alt="Pilates Sessions"> 
+                    <div class="product-info">
+                        <h3>Pilates Sessions</h3>
+                        <a href="#" class="button">Shop</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="new-offers">
+            <h2>New Offers</h2>
+            <div class="glide new-offers-carousel">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="offer">
+                                <h3>Offer Title 1</h3>
+                                <p>Description of Offer 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="price">$99.99</p>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="offer">
+                                <h3>Offer Title 2</h3>
+                                <p>Description of Offer 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="price">$149.99</p>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="offer">
+                                <h3>Offer Title 3</h3>
+                                <p>Description of Offer 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p class="price">$199.99</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <!-- Footer Content -->
+    </footer>
+    
+    <!-- Glide.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@3.4.1/dist/glide.min.js"></script>
+    <script>
+        // Initialize Glide.js carousel for new offers section
+        new Glide('.new-offers-carousel', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+            breakpoints: {
+                1024: {
+                    perView: 2
+                },
+                600: {
+                    perView: 1
+                }
+            }
+        }).mount();
+    </script>
+</body>
+</html>
